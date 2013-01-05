@@ -1,6 +1,6 @@
 // javascript Ajax Request
-/* define the Ajax call function */
 
+/* define the Ajax call function */
 function ajaxCall(dataUrl, callback) {
 
 	/* use our function to get the correct Ajax object based on support */
@@ -32,3 +32,14 @@ function ajaxCall(dataUrl, callback) {
 	request.send(null);
 	
 }
+
+ajaxCall("data/contacts.json", function(data) {
+	
+	/*
+	these are the contents of the callback function
+	the "data" arguement is the contact list in JSON format
+	this is where you would loop through the data
+	*/
+	
+
+});
