@@ -1,0 +1,10 @@
+Sprint 2: Breaking up with a model
+JavaScript data models like the address book don't really belong inside your application code. Take the JSON from Sprint 1 and split it out into its own contacts.json file. Use Ajax calls to pull in the necessary data. Your tool should function exactly as before.
+
+Note: This won't work locally without running a local server. If you're on a Mac, you're in luck: just open up your terminal, navigate to the project folder, and type "python -m SimpleHTTPServer". It should respond with something like "Serving HTTP on 0.0.0.0 port 8000 ..."; in this case, you would point your browser to http://0.0.0.0:8000 to pull up the page. If you're on Windows, you can try your luck with WAMP, but I'm afraid Google is likely to be your best friend in this case.
+
+Limitations:
+
+No jQuery; raw JavaScript only
+The address book data must be stored in an external JSON file
+NO GLOBAL VARIABLES. Don't pollute the global namespace! (This should go without saying at this point)
