@@ -6,6 +6,8 @@ function ajaxCall(dataUrl, callback) {
 	/* use our function to get the correct Ajax object based on support */
 	var request = getHTTPObject();
 	
+	outputElement.innerHTML = "Loading...";
+	
 	request.onreadystatechange = function () {
 		
 		// check to see if the Ajax call went through
