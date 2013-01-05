@@ -1,5 +1,8 @@
 // JavaScript Document
 
+var xhr = XMLHttpRequest();
+
+
 /* create address book data */
     var contacts = {
         "addressBook" : [
