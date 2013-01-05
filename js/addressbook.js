@@ -1,7 +1,7 @@
 // javascript Ajax Request
 /* define the Ajax call function */
 
-function ajaxCall(dataUrl) {
+function ajaxCall(dataUrl, callback) {
 
 	/* use our function to get the correct Ajax object based on support */
 	var request = getHTTPObject();
@@ -11,8 +11,15 @@ function ajaxCall(dataUrl) {
 		// check to see if the Ajax call went through
 		if( request.redystate === 4 && request.status === 200 ) {
 			
-			// spit out the data that comes back
-			console.log(request.responseText);
+			// save the Ajax call to a function
+			var contacts = JSON.parse(request.responseText);
+			
+			// make sure the callback is indeed a function before executing it
+			if(typeof callback === "function") {
+				
+				callback(contacts);
+				
+				} // end function check
 			
 		} // end ajax status check
 		
@@ -20,6 +27,7 @@ function ajaxCall(dataUrl) {
 	
 	/* Get all the information ready to go */
 	request.open("GET", "dataUrl", true);
+	
 	/* make the actual call */
 	request.send(null);
 	
