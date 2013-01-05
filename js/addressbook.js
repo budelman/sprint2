@@ -6,12 +6,14 @@ request.onreadystatechange = function () {
 	// check if the request is ready and that it was successful
 	if( request.redystate === 4 && request.status === 200 ) {
 		
-		// do something
+		// spit out the data that comes back
+		console.log(request.responseText);
+		
 	}
 }
 
 /* Get all the information ready to go */
 request.open("GET", "data/contacts.json", true);
 
-/* initiate actual call */
+/* make the actual call */
 request.send(null);
