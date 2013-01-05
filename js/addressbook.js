@@ -1,19 +1,26 @@
 // javascript Ajax Request
-var request = getHTTPObject();
+/* define the Ajax call function */
 
-request.onreadystatechange = function () {
+function ajaxCall(dataUrl) {
+
+	/* use our function to get the correct Ajax object based on support */
+	var request = getHTTPObject();
 	
-	// check if the request is ready and that it was successful
-	if( request.redystate === 4 && request.status === 200 ) {
+	request.onreadystatechange = function () {
 		
-		// spit out the data that comes back
-		console.log(request.responseText);
+		// check to see if the Ajax call went through
+		if( request.redystate === 4 && request.status === 200 ) {
+			
+			// spit out the data that comes back
+			console.log(request.responseText);
+			
+		} // end ajax status check
 		
-	}
+	} // end onreadystatechange
+	
+	/* Get all the information ready to go */
+	request.open("GET", "dataUrl", true);
+	/* make the actual call */
+	request.send(null);
+	
 }
-
-/* Get all the information ready to go */
-request.open("GET", "data/contacts.json", true);
-
-/* make the actual call */
-request.send(null);
