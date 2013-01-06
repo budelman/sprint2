@@ -25,7 +25,7 @@ function getHttpObject() {
 function ajaxCall(dataUrl, outputElement,callback) {
 
 	/* use our function to get the correct Ajax object based on support */
-	var request = getHTTPObject();
+	var request = getHttpObject();
 	
 	outputElement.innerHTML = "Loading...";
 	
