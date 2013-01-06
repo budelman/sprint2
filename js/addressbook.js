@@ -74,7 +74,7 @@ function ajaxCall(dataUrl, outputElement,callback) {
 			var output = document.getElementById("output");
 			
 			/* start the Ajax call */
-            ajaxCall('data/contacts.json', output, function(data) {
+			ajaxCall("data/contacts.json", output, function(data) {
 				
 			// save the input value, contacts length and i to variables
             var searchValue = searchField.value,
@@ -116,7 +116,7 @@ function ajaxCall(dataUrl, outputElement,callback) {
 			var output = document.getElementById("output");
 			
 			/* start the Ajax call */
-            ajaxCall('data/contacts.json', output, function(data) {
+            ajaxCall("data/contacts.json", output, function(data) {
             
             var addrBook = data.addressBook,
 				count = addrBook.length,
