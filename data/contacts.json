@@ -1,8 +1,8 @@
-// JavaScript Document
+// JSON Document
 {
 "addressBook" : [
 	{
-	"name": "michael perrone",
+	"name": "michaelperrone",
 	"email": "michael.perrone@freshtilledsoil.com",
 		},
 		{
@@ -10,7 +10,7 @@
 	"email": "richard@freshtilledsoil.com",
 		},
 		{
-	"name": "alex fedorov",
+	"name": "alexfedorov",
 	"email": "alex@freshtilledsoil.com",
 		},
 		{
@@ -30,7 +30,7 @@
 	"email": "kristy@freshtilledsoil.com",
 		},
 		{
-	"name": "alex sylvia",
+	"name": "alexsylvia",
 	"email": "alex.sylvia@freshtilledsoil.com",
 		},
 		{
@@ -38,7 +38,7 @@
 	"email": "alec.harrison@freshtilledsoil.com",
 		},
 		{
-	"name": "steve h",
+	"name": "stevehickey",
 	"email": "steve.hickey@freshtilledsoil.com",
 		},
 		{
@@ -56,10 +56,6 @@
 		{
 	"name": "steve",
 	"email": "steve@freshtilledsoil.com",
-		},
-		{
-	"name": "michael connors",
-	"email": "michael.connors@freshtilledsoil.com",
 		},
 		{
 	"name": "jonathan",
@@ -93,9 +89,5 @@
 	"name": "paul",
 	"email": "paul.greenlea@freshtilledsoil.com",
 		},
-		{
-	"name": "alex stetson",
-	"email": "alexs@freshtilledsoil.com",
-		},
-	]
+]
 }
