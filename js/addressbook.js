@@ -1,6 +1,6 @@
 /* standard Ajax xhr function */
 
-function getHTTPObject() {
+function getHttpObject() {
 	
 	var xhr;
 	
