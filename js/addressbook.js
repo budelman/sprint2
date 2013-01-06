@@ -1,4 +1,5 @@
 /* standard Ajax xhr function */
+
 function getHTTPObject() {
 	
 	var xhr;
@@ -11,7 +12,7 @@ function getHTTPObject() {
 	} else if (window.ActiveXObject) { // check for the IE 6 Ajax
 		
 		// save it to the xhr variable
-		xhr = new ActiveXObject("Msxm12.XMLHTTP");
+		xhr = new ActiveXObject("Msxml2.XMLHTTP");
 		
 	}
 	
@@ -28,10 +29,10 @@ function ajaxCall(dataUrl, outputElement,callback) {
 	
 	outputElement.innerHTML = "Loading...";
 	
-	request.onreadystatechange = function () {
+	request.onreadystatechange = function() {
 		
 		// check to see if the Ajax call went through
-		if( request.redystate === 4 && request.status === 200 ) {
+		if( request.readyState === 4 && request.status === 200 ) {
 			
 			// save the Ajax call to a function
 			var contacts = JSON.parse(request.responseText);
@@ -57,6 +58,7 @@ function ajaxCall(dataUrl, outputElement,callback) {
 /* wrap everything in an anonymous function to contain the variables */
 
 (function() {
+	
 	/* define the DOM elements and common variables you'll need */
     var searchForm = document.getElementById("search-form"),
         searchField = document.getElementById("q"),
@@ -189,4 +191,5 @@ function ajaxCall(dataUrl, outputElement,callback) {
     // activate search on form submit
     searchForm.addEventListener("submit", addr.search, false);
     
+	
 })(); // end anonymous function
