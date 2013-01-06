@@ -8,7 +8,7 @@ function getHTTPObject() {
 		// if it's supported, use it because it's better
 		xhr = new XMLHttpRequest();
 	
-	} else if (window.ActiveXObject) {
+	} else if (window.ActiveXObject) { // check for the IE 6 Ajax
 		
 		// save it to the xhr variable
 		xhr = new ActiveXObject("Msxm12.XMLHTTP");
@@ -37,7 +37,7 @@ function ajaxCall(dataUrl, outputElement, callback) {
 			var contacts = JSON.parse(request.responseText);
 			
 			// make sure the callback is indeed a function before executing it
-			if(typeof callback === "function") {
+			if(typeof callback === "function"){
 				
 				callback(contacts);
 				
@@ -48,8 +48,7 @@ function ajaxCall(dataUrl, outputElement, callback) {
 	} // end onreadystatechange
 	
 	/* Get all the information ready to go */
-	request.open("GET", "dataUrl", true);
-	
+	request.open("GET", dataUrl, true);
 	/* make the actual call */
 	request.send(null);
 	
