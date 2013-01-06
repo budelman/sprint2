@@ -1,6 +1,6 @@
 {
 "addressBook" : [
-	{
+		{
 	"name": "michael perrone",
 	"email": "michael.perrone@freshtilledsoil.com",
 		},
@@ -87,6 +87,6 @@
 		{
 	"name": "paul",
 	"email": "paul.greenlea@freshtilledsoil.com",
-		},
+		}
 ]
 }
