@@ -12,7 +12,7 @@ function getHTTPObject() {
 	} else if (window.ActiveXObject) { // check for the IE 6 Ajax
 		
 		// save it to the xhr variable
-		xhr = new ActiveXObject("Msxml2.XMLHTTP");
+		xhr = new ActiveXObject("Msxm12.XMLHTTP");
 		
 	}
 	
