@@ -1,8 +1,7 @@
-// JSON Document
 {
 "addressBook" : [
 	{
-	"name": "michaelperrone",
+	"name": "michael perrone",
 	"email": "michael.perrone@freshtilledsoil.com",
 		},
 		{
@@ -10,7 +9,7 @@
 	"email": "richard@freshtilledsoil.com",
 		},
 		{
-	"name": "alexfedorov",
+	"name": "alex fedorov",
 	"email": "alex@freshtilledsoil.com",
 		},
 		{
@@ -30,7 +29,7 @@
 	"email": "kristy@freshtilledsoil.com",
 		},
 		{
-	"name": "alexsylvia",
+	"name": "alex sylvia",
 	"email": "alex.sylvia@freshtilledsoil.com",
 		},
 		{
@@ -38,7 +37,7 @@
 	"email": "alec.harrison@freshtilledsoil.com",
 		},
 		{
-	"name": "stevehickey",
+	"name": "steve hickey",
 	"email": "steve.hickey@freshtilledsoil.com",
 		},
 		{
