@@ -21,7 +21,7 @@ function getHTTPObject() {
 
 
 /* define the Ajax call */
-function ajaxCall(dataUrl, outputElement, callback) {
+function ajaxCall(dataUrl, outputElement,callback) {
 
 	/* use our function to get the correct Ajax object based on support */
 	var request = getHTTPObject();
@@ -74,7 +74,6 @@ function ajaxCall(dataUrl, outputElement, callback) {
 			/* start the Ajax call */
             ajaxCall('data/contacts.json', output, function(data) {
 				
-
 			// save the input value, contacts length and i to variables
             var searchValue = searchField.value,
                 addrBook = data.addressBook,
